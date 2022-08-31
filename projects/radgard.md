@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/micromouse/micromouse-square.jpg
+image: img/radgrad_logo.png
 title: "Radgard"
 date: 2022
 published: true
