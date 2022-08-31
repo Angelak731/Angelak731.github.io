@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: Project
 type: project
 image: img/radgrad_logo.png
 title: "Radgard"
