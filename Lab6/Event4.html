@@ -31,6 +31,7 @@
                     <body>
                     
                     <table border="1">
+                        now = new Date()
                         document.write((first_name) + ' ' + (last_name))
                      <tr>
                        <th colspan="2" style="text-align: left; padding: 10px;">Your One Stop For Used Phones - AK's</th>
@@ -49,7 +50,7 @@
                     
                      <tr style="padding: 3px;">
                        <td style="padding:3px;">3.</td>
-                       <td>11:15 AM</td>
+                       <td>(hours + 11) % 12 + 1；(hours < 12)?'AM':'PM'</td>
                      </tr>
                      
                     </table>
