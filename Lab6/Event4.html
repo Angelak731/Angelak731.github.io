@@ -11,20 +11,50 @@
 </header>
 <body>
     <script>
-    first_name = <b>"Angela"</b>;
-    last_name = <i>"Khorana"</i>;
+    first_name = <b>${Angela}</b>;
+    last_name = <i>"${Khorana}"</i>;
     </script>
     <footer>
         <h1 align="center">
             Your One Stop For Used Phones - AK's
             <footer>
-                <table>
-                    <tr>
-                        <td>1${1.Copyright @ Angela Khorana}</td>
-                        <td>2${2.2022}</td>
-                        <td>2${3.11:15 AM}</td>
-                    </tr>
-                </table>
+                <style>
+                    table, td, th {
+                     border: 1px solid;
+                    }
+                    table {
+                     width: 100%;
+                     border-collapse: collapse;
+                    }
+                    </style>
+                    </head>
+                    <body>
+                    
+                    <table border="1">
+                        document.write((first_name) + ' ' + (last_name))
+                     <tr>
+                       <th colspan="2" style="text-align: left; padding: 10px;">Your One Stop For Used Phones - AK's</th>
+                     </tr>
+                     
+                    
+                     <tr>
+                       <th style="vertical-align: top;text-align: left; padding-bottom: 30px;">1.</th>
+                       <th style="vertical-align: bottom;text-align: left;" >Copyright @ Angela Khorana</th>
+                     </tr>
+                    
+                     <tr>
+                       <td style="padding:3px;">2.</td>
+                       <td>2022</td>
+                     </tr>
+                    
+                     <tr style="padding: 3px;">
+                       <td style="padding:3px;">3.</td>
+                       <td>11:15 AM</td>
+                     </tr>
+                     
+                    </table>
+                    </body>
+                    </html>
             </footer>
         </h1>
     </footer>
