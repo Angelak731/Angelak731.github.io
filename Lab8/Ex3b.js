@@ -1,12 +1,9 @@
 const { count } = require("console");
 
 require("./products_data.js");
-var num_products = 5;
-var counter = 1;
 
-while (counter <= num_products) { 
+for (counter = 1);eval("typeof name"+i) != 'undefined'; counter++) {
     console.log(counter + "." + eval('name' + counter));
-    counter++;
 }
 
 console.log("That's all we have!");
