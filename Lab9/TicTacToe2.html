@@ -38,13 +38,6 @@
                     document.write(`<td id=${count} onclick="if (this.innerHTML = '-') {
                             this.innerHTML = marks[move_num%2];
                             col = count % 3;
-                            board[row][col] = marks[move_num%2]; move_num++; 
-                            status_div.innerHTML = marks[move_num%2] + ' goes';
-                            board_str = board.map(e => e.join('')).join('');
-                            win = patt.exec(board_str);
-                            if (win != null) {
-                                status_div.innerHTML = win[1];
-                            }
                         } 
                     "">`); 
                     document.write(board[rowNum][col]);
