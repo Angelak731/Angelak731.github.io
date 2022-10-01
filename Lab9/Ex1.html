@@ -4,18 +4,22 @@
     */
 
     // Product data
+    /*
     item1 = "HTC";
  price1 = 40.00;
  var quantity1 = 2;
  image1 = "http://dport96.github.io/ITM352/morea/080.flow-control-II/HTC.jpg";
-
  */
-var product_quantities = [2, 1, 2, 3, 1];
+
+
+var product_quantities = [2, 1, 2, 3, 11];
 
 var product1 = {"name": "HTC",
                 "price": 40,
                 "SKU#": "1234",
                 "quantity": 2};
+
+
  item2 = "Apple";
  price2 = 75.00;
  var quantity2 = 1;
@@ -37,10 +41,11 @@ var product1 = {"name": "HTC",
  image5 = "http://dport96.github.io/ITM352/morea/080.flow-control-II/Blackberry.jpg";
 
 
+
     // Compute extended prices
     product1.quantity = 0;
     product1["quantity"] = 3;
-    product1 ['SKU#'] = '12345';
+    product1['SKU#'] = '2345';
     var extended_price1 = product_quantities[0]*product1.price;
     var extended_price2 = product_quantities[1]*price2;
     var extended_price3 = product_quantities[2]*price3;
