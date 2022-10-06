@@ -38,7 +38,18 @@
         var subtotal = extended_price1 + extended_price2 + extended_price3 + extended_price4 + extended_price5;
         var tax_rate = 0.0575;
         var tax = tax_rate*subtotal
-        var total = subtotal + tax;
+
+        if(subtotal <=50) {
+            shipping = 2;
+        }
+        else if(subtotal <= 100) {
+            shipping =5;
+        }
+        else{
+            shipping = 0.05*subtotal;
+        }
+
+        var total = subtotal + tax + shipping;
 
     </script>
     <title>Document</title>
@@ -109,6 +120,12 @@
         <td style="text-align: center;" colspan="3" width="67%"><span style="font-family: arial;">Tax @ ${tax_rate*100}%</span></td>
         <td width="54%">$${tax.toFixed(2)}</td>
         </tr>
+
+        <tr>
+        <td style="text-align: center;" colspan="3" width="67%">Shipping</td>
+        <td width="54%">$${tax.toFixed(2)}</td>
+        </tr>
+
         <tr>
         <td style="text-align: center;" colspan="3" width="67%"><strong>Total</strong></td>
         <td width="54%"><strong>$${total.toFixed(2)}</strong></td>
@@ -117,7 +134,11 @@
 </script>
   </tbody>
 </table>
-
+<div><b>
+    OUR SHIPPING POLICY IS:A subtotal $0 - $49.99 will be $2 shipping
+A subtotal $50 - $99.99 will be $5 shipping
+Subtotals over $100 will be charged 5% of the subtotal amount
+</b></div>
 
 </body>
 </html>
