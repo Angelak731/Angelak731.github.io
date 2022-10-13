@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order here</title>
+</head>
+
+<body>
+    <script>
+        function isNonNegativeInteger(queryString, returnErrors = false) {
+            errors = []; // assume no errors at first
+            if (Number(queryString) = queryStringueryString)  {
+                errors.push('Not a number!'); // Check if string is a number value
+            } else {
+                errors.push('Not a number!'); // Check if string is a number value
+                if (queryStringueryString < 0) errors.push('Negative value!'); // Check if it is non-negative
+                if (parseInt(queryStringueryString) != queryStringueryString) errors.push('Not an integer!'); // Check that it is an integer
+            }
+            if (returnErrors) {
+                return errors;
+            } else if (error.length == 0) {
+                return true;
+            } else {
+            return false;
+            }
+        }
+            function checkQuantittyTextbox() {
+                let input_string = document.getElementById("quantity_textbox").value;
+                let error_array = isNonNegativeInteger(input_string, true);
+                if (error_array.length == 0) {
+                qty_textbook_message.innerHTML = input_string;
+                } else {
+                    qty_textbox_message.InnerHTML =  error_array.join("; ");
+                }
+            }
+
+            function displayPurchase() {
+                let value = document.getElementById('quantity_textbox').value;
+                let validate = isNonNegativeInteger(value);
+                if (validate) {
+                    document.write('Thank you for ordering ${value} things!');
+                } /*  else {
+                    document.write ('Enter a valid quantity bozo!');
+                } */
+
+    </script>
+    <form name="quantity_form" action="display_purchase.html" method="GET">
+    <label>quantity Desired:</label>
+    <Input type="text" onkeyup="checkQuantittyTextbox();" id="quantity_textbox">
+    </input>
+    <BR><span id='qty_textbox_message'>Enter a quantity</span>
+    <BR><input type = "submit">Purchase!</input>
+    </form>
+</body>
+
+</html>
