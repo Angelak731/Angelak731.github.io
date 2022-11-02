@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./product_data.js"></script>
+    <title>Order Here</title>
+</head>
+
+<body>
+    <script>
+        function isNonNegativeInteger(queryString, returnErrors = false) {
+            errors = []; 
+            if (Number(queryString) != queryString) {
+                errors.push('Not a number!'); 
+            } else {
+                if (queryString < 0) errors.push('Negative value!'); 
+                if (parseInt(queryString) != queryString) errors.push('Not an integer!'); 
+            }
+            if (returnErrors) {
+                return errors;
+            } else if (errors.length == 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function checkQuantityTextbox(theTextbox) {
+            errs = isNonNegInt(theTextbox.value, true);
+            document.getElementById(theTextbox.name + '_message').innerHTML = errs.join(", ");
+        }
+
+        function displayPurchase() {
+            let value = document.getElementById('quantity_textbox').value;
+            let is_valid = isNonNegativeInteger(value);
+            if (is_valid) {
+                document.write(`Thank you for ordering ${value} things!`);
+            } /* else {
+                document.write(`Enter a valid quantity bozo!`);
+            }*/
+        }
+
+        let params = (new URL(document.location)).searchParams;
+
+        console.log("Params=" + params);
+        if (params.has("error")) {
+            let err_msg = params.get
+        }
+        if (params.has("quantity_textbox")) {
+            let the_text = params.get("quantity_textbox");
+
+            // Validate the input and if good, thank the user, otherwise print error message
+            if (isNonNegativeInteger(the_text)) {
+                document.write(`Thank you for ordering ${the_text} things`);
+            } else {
+                document.write('Enter a valid quantity bozo!');
+            }
+        }
+
+    </script>
+
+    <form name='quantity_form' action="process_form" method="POST">
+    <script>
+        for (i in products) {
+            document.write(`<h3>${products[i]["brand"]} at \$${products[i]["price"]} (${products[i]["total_sold"]} sold)</h3>`);
+            document.write(`
+    <label for="quantity_textbox">quantity desired:</label>
+    <input type="text" name="quantity_textbox[${i}]" onkeyup="checkQuantityTextbox(this);">
+    <span id="quantity_textbox[${i}]_message">Enter a quantity</span>
+    `);
+        }
+    </script>
+    <br>
+    <input type="submit" value='Purchase'>
+    </form>
+
+<script>
+        // Make the form sticky
+        if (params.has('quantity_textbox')) {
+            quantity_form["quantity_textbox"].value = params.get('quantity_textbox');
+            checkQuantityTextbox(quantity_form["quantity_textbox"]);
+        }
+    </script>
+</body>
+
+</html>

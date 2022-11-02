@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="E1: UI Basics Technical Essay | Angela Khorana | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/Angelak731.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Angela Khorana | Professional Portfolio">
+    <meta property="og:url" content="https://Angelak731.github.io/essays/E1:%20UI%20Basics%20Technical%20Essay">
+    <meta property="og:title" content="E1: UI Basics Technical Essay | Angela Khorana | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/Angelak731.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>E1: UI Basics Technical Essay | Angela Khorana | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Angela Khorana</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">E1: UI Basics Technical Essay</h1>
+  <span class="date">18 Sep 2022</span>
+  <hr>
+  ## Summary
+
+The first 3 WODs which are BrowserHistory1, BrowserHistory2, and BrowserHistory3 explain how to code a web page. BrowserHistory1focuses on setting up a website’s content. The purpose of BrowserHistory2 is to incorporate colors and fonts into the website's style. Finally, BrowserHistory3 presents the navigation bar, and formatting of the site.
+
+## Browser history 1
+
+When I started Browser history 1, I thought that the instructions were pretty easy but there were some parts that I was confused about. As a result, I watched the first screencast before I went on my own. This was really helpful because this way you can prepare yourself for what is coming and what you are supposed to see. When I saw the video, I kept on stopping so that I could make sure that I understood each step. My first attempt took me 27 min to complete because I kept on making small mistakes. So, I ended up rewatching the screencast to see which parts I was making a mistake. On my second try, I was able to shorten the time.
+
+## Browser history 2
+
+After my first experience with Browser history 1, I learned my lesson about what I should prepare before starting Browser history 2. I think Browser history 2 was easier than Browser history 1. My first attempt was already close to the Rx time so I just redid it the second time so that it could be in the Rx time. Just like how I did it in Browser history 1, I watched the screencast first. However this time I watched it twice before starting and took notes. This way if I get confused, I can just look in my notes instead of trying to look through the video to see which parts I am getting the problem.
+
+## Browser history 3
+
+Browser history 3 was the hardest WOD to complete. I watched the screencast just like the previous one and took notes. However, I kept on making mistakes on my first try. I ended up taking screen shots of the screencast and putting them in my notes so that while I was going through my Browser history 3, I could see if my screen looks the same as the screencast.
+
+## What I learned 
+
+As you work on the WODs, remember to take breaks when necessary because if not you will just get frustrated and make small mistakes while doing it. Also, looking through the screencast multiple times and making notes is important because if not then, your time will not shorten and you would need to redo them multiple times.
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
